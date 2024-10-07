@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif\;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pop_up_bg{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.disable{
+    pointer-events: none;
+}
+.content{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+.content__display{
+    display: flex;
+    justify-content:center;
+    height: 100%;
+    align-items: center;
+}
+.card{
+    width: 80%;
+    text-align: center;
+}
+.shadow{
+    box-shadow: 10px 40px 25px rgba(0,0,0,0.3);
+}
+.border_none{
+    border: none !important;
+    outline: none;
+    border-radius: 10px !important;
+}
+.search_btn{
+    transition: .5s;
+    color: #343a40;
+    cursor: pointer;
+}
+.input{
+    cursor:pointer;
+}
+.input:focus + .search_btn{
+    background-color: #343a40;
+    color: #fff;
+}
+.input:not(:placeholder-shown) + .search_btn{
+    background-color: #343a40;
+    color: #fff;
+}
+.header_add-on{
+    background-color: #343a40 !important;
+    color: #fff !important;
+}
+.pop_up{
+    background-color: #343a40;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    width: 70vw;
+    z-index: 6;
+    top: 35%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    color: #fff;
+}
+.close_icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.pop_title{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media only screen and (min-width: 700px){
+    .pop_up{
+        width: 50%;
+        height: 40%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .pop_up{
+        width: 40%;
+        height: 30%;
+    }
+}
